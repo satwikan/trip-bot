@@ -12,7 +12,7 @@ QDRANT_API_KEY = os.getenv("API_KEY")
 COLLECTION_NAME = "thailand_content"
 
 # We'll use a 768-dim embedding model
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
+EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 # --------- SETUP CLIENTS ---------
 print("Loading embedding model...")
@@ -36,7 +36,7 @@ def create_collection_if_needed():
     client.create_collection(
         collection_name=COLLECTION_NAME,
         vectors_config=rest.VectorParams(
-            size=768,             # dimension of all-MiniLM-L6-v2 embeddings
+            size=384,
             distance=rest.Distance.COSINE,
         ),
     )

@@ -13,7 +13,7 @@ QDRANT_URL = os.getenv("API_ENDPOINT")
 QDRANT_API_KEY = os.getenv("API_KEY")
 COLLECTION_NAME = "thailand_content"
 
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
+EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
