@@ -73,5 +73,11 @@ These go into your `.env` file as `API_ENDPOINT` and `API_KEY`.
 Clone or create the project directory:
 
 ```bash
-mkdir thailand-brain
-cd thailand-brain
+git clone https://github.com/satwikan/trip-bot
+cd trip-bot
+pip install -r requirements.txt
+```
+Run the code
+```bash
+uvicorn api:app --reload
+```
