@@ -1,6 +1,6 @@
-# Thailand Brain 🧠🇹🇭
+# Trip Bot
 
-Personal RAG (Retrieval-Augmented Generation) system for planning a Thailand trip.
+Personal RAG (Retrieval-Augmented Generation) system for planning an abroad trip. I am taking Thailand as an example.
 
 You:
 - Save content (videos, notes, etc.) into a vector database.
